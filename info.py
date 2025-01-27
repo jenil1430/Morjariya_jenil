@@ -55,8 +55,8 @@ MULTI_FSUB = [int(channel_id) for channel_id in environ.get('AUTH_CHANNEL', '-10
 # MongoDB Configuration
 # ============================
 DATABASE_URI = environ.get('DATABASE_URI', "https://t.me/+aWdKHz06fO5lNzBl")
-DATABASE_URI2 = environ.get('DATABASE_URI2', "https://t.me/+HFYz4QQDJ-o4M2I1")
-DATABASE_NAME = environ.get('DATABASE_NAME', "movie upload channel")
+DATABASE_URI2 = environ.get('DATABASE_URI2', "")
+DATABASE_NAME = environ.get('DATABASE_NAME', "movie_upload_channel")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Naitik_files')
 
 # ============================
