@@ -55,7 +55,7 @@ MULTI_FSUB = [int(channel_id) for channel_id in environ.get('AUTH_CHANNEL', '-10
 # MongoDB Configuration
 # ============================
 DATABASE_URI = environ.get('DATABASE_URI', "https://t.me/+aWdKHz06fO5lNzBl")
-DATABASE_URI2 = environ.get('DATABASE_URI2', "https://t.me/+aWdKHz06fO5lNzBl")
+DATABASE_URI2 = environ.get('DATABASE_URI2', "https://t.me/+HFYz4QQDJ-o4M2I1")
 DATABASE_NAME = environ.get('DATABASE_NAME', "movie upload channel")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Naitik_files')
 
@@ -63,15 +63,15 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Naitik_files')
 # Movie Notification & Update Settings
 # ============================
 MOVIE_UPDATE_NOTIFICATION = bool(environ.get('MOVIE_UPDATE_NOTIFICATION', True))  # Notification On (True) / Off (False)
-DEENDAYAL_IMAGE_FETCH = bool(environ.get('DEENDAYAL_IMAGE_FETCH', True))  # On (True) / Off (False)
+DEENDAYAL_IMAGE_FETCH = bool(environ.get('', True))  # On (True) / Off (False)
 CAPTION_LANGUAGES = ["Bhojpuri", "Hindi", "Bengali", "Tamil", "English", "Bangla", "Telugu", "Malayalam", "Kannada", "Marathi", "Punjabi", "Bengoli", "Gujrati", "Korean", "Gujarati", "Spanish", "French", "German", "Chinese", "Arabic", "Portuguese", "Russian", "Japanese", "Odia", "Assamese", "Urdu"]
 
 # ============================
 # Verification Settings
 # ============================
 VERIFY = bool(environ.get('VERIFY', False))  # Verification On (True) / Off (False)
-DEENDAYAL_VERIFY_EXPIRE = int(environ.get('DEENDAYAL_VERIFY_EXPIRE', 24))  # Add time in hours
-DEENDAYAL_VERIFIED_LOG = int(environ.get('DEENDAYAL_VERIFIED_LOG', ' -1002365862014'))  # Log channel id (make sure bot is admin)
+DEENDAYAL_VERIFY_EXPIRE = int(environ.get('VERIFY_EXPIRE', 24))  # Add time in hours
+DEENDAYAL_VERIFIED_LOG = int(environ.get('VERIFIED_LOG', ' -1002365862014'))  # Log channel id (make sure bot is admin)
 HOW_TO_VERIFY = environ.get('HOW_TO_VERIFY', 'https://t.me/+KKTnwmkj9DNkOTY1')  # How to open tutorial link for verification
 
 # ============================
