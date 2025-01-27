@@ -80,7 +80,7 @@ HOW_TO_VERIFY = environ.get('HOW_TO_VERIFY', 'https://t.me/+KKTnwmkj9DNkOTY1')  
 IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', False))
 SHORTLINK_URL = environ.get('SHORTLINK_URL', 'modijiurl.com')
 SHORTLINK_API = environ.get('SHORTLINK_API', '58e44f258039e725a918be8a52684079644b498e')
-TUTORIAL = environ.get('TUTORIAL', 'https://t.me/Deenu_dhakad')  # Tutorial video link for opening shortlink website
+TUTORIAL = environ.get('TUTORIAL', 'https://t.me/Naitik_movie_group')  # Tutorial video link for opening shortlink website
 IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', False))
 
 # ============================
@@ -95,9 +95,9 @@ OWNERID = int(os.environ.get('OWNERID', '7240229587'))  # Replace with the actua
 # ============================
 # User Configuration
 # ============================
-auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
+auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '-1002276875070').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
-PREMIUM_USER = [int(user) if id_pattern.search(user) else user for user in environ.get('PREMIUM_USER', '').split()]
+PREMIUM_USER = [int(user) if id_pattern.search(user) else user for user in environ.get('PREMIUM_USER', '7240229587').split()]
 
 # ============================
 # Miscellaneous Configuration
