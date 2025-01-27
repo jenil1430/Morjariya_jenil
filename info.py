@@ -20,7 +20,7 @@ def is_enabled(value, default):
 SESSION = environ.get('SESSION', 'Media_search')
 API_ID = int(environ.get('API_ID', '28709833'))
 API_HASH = environ.get('API_HASH', 'Bcf9ee1c3c221117e6fdd8ee203a37e6')
-BOT_TOKEN = environ.get('BOT_TOKEN', "AAHYGP9BNLarEreTm3Iu4d6qHR3GQl7kunU")
+BOT_TOKEN = environ.get('BOT_TOKEN', "7250303190:AAHYGP9BNLarEreTm3Iu4d6qHR3GQl7kunU")
 
 # ============================
 # Bot Settings Configuration
@@ -42,7 +42,7 @@ FSUB_PICS = (environ.get('FSUB_PICS', 'https://graph.org/file/7478ff3eac37f4329c
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '7240229587').split()]
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002333525152').split()]  # Channel id for auto indexing (make sure bot is admin)
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', ' -1002365862014'))  # Log channel id (make sure bot is admin)
-DEENDAYAL_MOVIE_UPDATE_CHANNEL = int(environ.get('DEENDAYAL_MOVIE_UPDATE_CHANNEL', '-1002440012749'))  # Notification of those who verify will be sent to your channel
+MOVIE_UPDATE_CHANNEL = int(environ.get('MOVIE_UPDATE_CHANNEL', '-1002440012749'))  # Notification of those who verify will be sent to your channel
 PREMIUM_LOGS = int(environ.get('PREMIUM_LOGS', '-1002413296624'))  # Premium logs channel id
 auth_channel = environ.get('AUTH_CHANNEL', '-1002276875070')  # Channel/Group ID for force sub (make sure bot is admin)
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '-1002196193634').split()]
@@ -62,7 +62,7 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Naitik_files')
 # ============================
 # Movie Notification & Update Settings
 # ============================
-DEENDAYAL_MOVIE_UPDATE_NOTIFICATION = bool(environ.get('DEENDAYAL_MOVIE_UPDATE_NOTIFICATION', True))  # Notification On (True) / Off (False)
+MOVIE_UPDATE_NOTIFICATION = bool(environ.get('MOVIE_UPDATE_NOTIFICATION', True))  # Notification On (True) / Off (False)
 DEENDAYAL_IMAGE_FETCH = bool(environ.get('DEENDAYAL_IMAGE_FETCH', True))  # On (True) / Off (False)
 CAPTION_LANGUAGES = ["Bhojpuri", "Hindi", "Bengali", "Tamil", "English", "Bangla", "Telugu", "Malayalam", "Kannada", "Marathi", "Punjabi", "Bengoli", "Gujrati", "Korean", "Gujarati", "Spanish", "French", "German", "Chinese", "Arabic", "Portuguese", "Russian", "Japanese", "Odia", "Assamese", "Urdu"]
 
@@ -77,7 +77,7 @@ HOW_TO_VERIFY = environ.get('HOW_TO_VERIFY', 'https://t.me/+KKTnwmkj9DNkOTY1')  
 # ============================
 # Link Shortener Configuration
 # ============================
-IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', False))
+IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', 'modijiurl.com'))
 SHORTLINK_URL = environ.get('SHORTLINK_URL', 'modijiurl.com')
 SHORTLINK_API = environ.get('SHORTLINK_API', '58e44f258039e725a918be8a52684079644b498e')
 TUTORIAL = environ.get('TUTORIAL', 'https://t.me/Naitik_movie_group')  # Tutorial video link for opening shortlink website
@@ -89,7 +89,7 @@ IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', False))
 GRP_LNK = environ.get('GRP_LNK', 'https://t.me/all_movie_group_REQUEST_cinema')
 CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/+DGlAs7I8mEBhOWY1')
 OWNER_LNK = environ.get('OWNER_LNK', '@Naitik_movie_group')
-DEENDAYAL_MOVIE_UPDATE_CHANNEL_LNK = environ.get('DEENDAYAL_MOVIE_UPDATE_CHANNEL_LNK', 'https://t.me/+aWdKHz06fO5lNzBl')
+MOVIE_UPDATE_CHANNEL_LNK = environ.get('MOVIE_UPDATE_CHANNEL_LNK', 'https://t.me/+aWdKHz06fO5lNzBl')
 OWNERID = int(os.environ.get('OWNERID', '7240229587'))  # Replace with the actual admin ID
 
 # ============================
